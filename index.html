@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head land="fr-ch">
+    <title>Hackaton</title>
+	<meta name="keywords" content="Hackaton">
+	<meta name="description" content="Hackaton">
+	
+	<meta property="og:title" content="Hackaton" />
+	<meta property="og:description" content="Hackaton" />
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+	<meta property="og:locale" content="fr_CH" />
+	<meta property="og:site_name" content="Hackaton" />
+	<meta property="og:site_name" content="Hackaton">
+	<meta name="author" content="Hackaton">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+</head>
+<body>
+    <div>
+                <h1>Stat</h1>
+                <p>
+					<div id ='chartDiv'></div>
+					<script>
+					var chartData={
+						"type":"pop-pyramid",  // Specify your chart type here.
+						"scale-x":{
+							"values":["7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","91"] // Array of strings or numbers
+							
+						},
+						"plotarea":{
+						  "margin":"dynamic"
+						},
+						"scale-y":{
+							"values":"0:2100:700"
+						},
+						"series":[ // Length 2 array of objects
+							{
+							  "text":"Homme",
+							  "background-color":"#555",
+							  "data-side": 1, // 1 || 2
+							  "values": [13,29,73,127,192,275,296,349,428,481,523,621,637,604,715,834,1009,1105,1246,1426,1574,1669,1778,1871,1926,1990,1961,1992,2005,1998,1961,1988,1915,2019,1858,1785,1721,1638,1572,1486,1342,1219,1178,1222,992,940,846,719,655,544,496,449,405,394,299,255,227,182,158,126,97,85,65,59,34,39,32,22,13,11,8,3,4,1,1] // Array of numbers
+							},
+							{
+							  "text":"Femme",
+							  "data-side": 2,
+							  "values": [1,8,14,24,48,84,87,99,107,114,115,132,143,159,195,213,248,308,375,417,410,429,452,478,447,429,420,402,458,414,402,440,435,445,439,400,435,390,395,358,346,336,288,302,241,206,158,156,137,123,112,79,57,74,52,49,31,25,19,13,12,10,12,6,9,0,0,0,0,0,0] 
+							}
+						  ]
+					  };
+					  zingchart.render({ // Render Method[3]
+						id:'chartDiv',
+						data:chartData,
+						height:700,
+						width:"90%"
+					  });
+					</script>
+                </p>
+    </div>
+	
+<script src="jquery-2.1.4.min.js"></script>
+
+</body>
+</html>
+</html>
