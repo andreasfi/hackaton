@@ -18,9 +18,9 @@
 </head>
 <body>
     <div class="container">
-                <h1>Stat</h1>
+                <h1>Course Sierre - Zinal</h1>
 				
-				<h2>Question 1</h2>
+				<h2>Pyramide des ages</h2>
 				<select onchange="myFunction.call(this, event)" class="form-control">
 				  <option>0000</option>
 				  <option>1974</option>
@@ -98,13 +98,13 @@
 							id:'chartDiv',
 							data:chartData,
 							height:700,
-							width:"100%"
+							width:"80%"
 						  });
 						  
 						</script>
 				</div>
     
-				<h2>Question 2</h2>
+				<h2>Top 5</h2>
 				
 				<div>
 					<div class="col-lg-6 right">
@@ -135,7 +135,11 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="col-lg-12">
-							1er <temps> Rang
+							1er <temps> Rang <temps>
+							<script>
+							var total='salut';
+							document.write(total);
+							</script>
 						</div>
 						<div class="col-lg-8 col-lg-offset-4">
 							2e <temps> Rang
@@ -151,8 +155,6 @@
 						</div>
 					</div>
 				</div>
-					
-             
     </div>
 	<script>
 	function myFunction() {
@@ -322,7 +324,7 @@
 				man = [2,6,11,13,14,19,17,16,17,14,14,24,14,23,26,31,27,40,59,58,56,80,69,63,74,83,82,79,77,68,69,76,76,87,87,79,78,60,69,56,61,60,41,50,48,41,27,28,24,23,21,13,24,11,16,10,8,13,6,5,7,6,4,2,6,2,2,2,1,0,0,1,0,0];
 				break;
 		}
-		scale = "0:" +  Math.max.apply(Math, man)*2 + ":"+ Math.max.apply(Math, man);
+		scale = "0:" +  Math.max.apply(Math, man)/4*5 + ":"+ Math.max.apply(Math, man)/4;
 		var data1={
 							title:{
 								text:"Chart 1"
@@ -359,7 +361,7 @@
 							id:'chartDiv',
 							data:data1,
 							height:700,
-							width:"100%"
+							width:"80%"
 						  });
 	}
 	</script>
