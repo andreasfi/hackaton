@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container">
-                <h1>Course Sierre - Zinal</h1>
+				<img src="image/szMin.png" style="margin: 5px;">
 				
 				<h2>Pyramide des ages</h2>
 				<select onchange="agePyramid.call(this, event)" class="form-control">
@@ -104,7 +104,7 @@
 						</script>
 				</div>
     
-				<h2>Top 5</h2>
+				<h2>Top 5 Sierre Zinal</h2>
 				<div id='top'>
 					<script>
 					var topFiveHTML = 
@@ -118,41 +118,42 @@
 						
 						"<div class=\"col-lg-4\">"+
 							"<div class=\"col-lg-4 col-lg-offset-8\">"+
-								"1er homme rang 1"
+								"1er homme<br> rang 1"+
 							"</div>"+
 							"<div class=\"col-lg-8 col-lg-offset-4\">"+
-								"2ème homme rang 2"
+								"2eme homme<br> rang 2"+
 							"</div>"+
 							"<div class=\"col-lg-12\">"+
-								"3ème homme rang 3"
+								"3eme homme<br> rang 3"+
 							"</div>"+
 							"<div class=\"col-lg-8 col-lg-offset-4\">"+
-								"4ème homme rang 4"
+								"4eme homme<br> rang 4"+
 							"</div>"+
 							"<div class=\"col-lg-4 col-lg-offset-8\">"+
-								"5ème homme rang 5"
+								"5eme homme<br> rang 5"+
 							"</div>"+
 						"</div>"+
 						
 						"<div class=\"col-lg-4\">"+
-						
+							"<div class='col-lg-6'><img src='image/man.png' class='man'></div>"+
+							"<div class='col-lg-6'><img src='image/wom.gif' class='man'></div>"+
 						"</div>"+
 						
 						"<div class=\"col-lg-4\">"+
 							"<div class=\"col-lg-12\">"+
-								"1ère femme rang 15"
+								"1ere femme<br>rang 15"+
 							"</div>"+
 							"<div class=\"col-lg-8 col-lg-offset-4\">"+
-								"2ème femme rang 18"
+								"2eme femme<br>rang 18"+
 							"</div>"+
 							"<div class=\"col-lg-4 col-lg-offset-8\">"+
-								"3ème femme rang 22"
+								"3eme femme <br>rang 22"+
 							"</div>"+
 							"<div class=\"col-lg-8 col-lg-offset-4\">"+
-								"4ème femme rang 128"
+								"4eme femme <br>rang 128"+
 							"</div>"+
 							"<div class=\"col-lg-12\">"+
-								"5ème femme rang 129"
+								"5eme femme <br>rang 129"+
 							"</div>"+
 						"</div>";
 						document.getElementById("top").innerHTML = topFiveHTML;
@@ -417,9 +418,6 @@
 		}
 		scale = "0:" + Math.ceil( Math.max.apply(Math, men)/4*5) + ":"+ Math.ceil(Math.max.apply(Math, men)/4);
 		var data1={
-			title:{
-				text:"Chart 1"
-			},
 			"type":"pop-pyramid",  // Specify your chart type here.
 			"scale-x":{
 				"values":["7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","91"] // Array of strings or numbers
@@ -457,7 +455,8 @@
 		
 		var topFiveHTML = 
 			"<div class=\"col-lg-6 right\">" +
-				"Hommes"+
+				"Hommes<br>"+
+
 			"</div>"+ 
 			
 			"<div class=\"col-lg-6 left\">"+
@@ -466,56 +465,59 @@
 			
 			"<div class=\"col-lg-4\">"+
 				"<div class=\"col-lg-4 col-lg-offset-8\">"+
-					"1er homme rang "+
+					"1er homme <br>rang "+
 					winneur[0]+
 				"</div>"+
 				"<div class=\"col-lg-8 col-lg-offset-4\">"+
-					"2ème homme rang "+
+					"2eme homme <br>rang "+
 					winneur[1]+
 				"</div>"+
 				"<div class=\"col-lg-12\">"+
-					"3ème homme rang "+
+					"3eme homme <br>rang "+
 					winneur[2]+
 				"</div>"+
 				"<div class=\"col-lg-8 col-lg-offset-4\">"+
-					"4ème homme rang "+
+					"4eme homme <br>rang "+
 					winneur[3]+
 				"</div>"+
 				"<div class=\"col-lg-4 col-lg-offset-8\">"+
-					"5ème homme rang "+
+					"5eme homme <br>rang "+
 					winneur[4]+
 				"</div>"+
 			"</div>"+
 			
 			"<div class=\"col-lg-4\">"+
-			
+				
 			"</div>"+
 			
 			"<div class=\"col-lg-4\">"+
 				"<div class=\"col-lg-12\">"+
-					"1ère femme rang "+
+					"1ere femme <br>rang "+
 					winneuse[0]+
 				"</div>"+
 				"<div class=\"col-lg-8 col-lg-offset-4\">"+
-					"2ème femme rang "+
+					"2eme femme <br>rang "+
 					winneuse[1]+
 				"</div>"+
 				"<div class=\"col-lg-4 col-lg-offset-8\">"+
-					"3ème femme rang "+
+					"3eme femme <br>rang "+
 					winneuse[2]+
 				"</div>"+
 				"<div class=\"col-lg-8 col-lg-offset-4\">"+
-					"4ème femme rang "
+					"4eme femme <br>rang "
 					winneuse[3]+
 				"</div>"+
 				"<div class=\"col-lg-12\">"+
-					"5ème femme rang "+
+					"5eme femme <br>rang "+
 					winneuse[4]+
 				"</div>"+
 			"</div>";
 		document.getElementById("top").innerHTML = topFiveHTML;
 	}
 	</script>
+	<div class="fot">
+	Created by Suzanne Betrisey, Anthony Cheseaux, Pascal Deleze, Andreas Fischer
+	</div>
 <script src="jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>

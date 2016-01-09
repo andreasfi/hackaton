@@ -5,3 +5,18 @@
 .right {
 	text-align: right;
 }
+body {
+	background-color: #EAEAEA!important;
+	
+}
+.fot {
+	margin-top: 60px;
+	text-align: center;
+}
+.man {
+	width: 90px;
+	margin-top: 15px;
+}
+h2 {
+	margin-top: 50px!important;
+}
